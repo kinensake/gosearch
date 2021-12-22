@@ -7,3 +7,7 @@ require (
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
 )
+
+retract (
+	v1.0.0
+)

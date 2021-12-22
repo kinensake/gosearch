@@ -11,7 +11,7 @@ gosearch <package-keyword>
 ```
 Then choose package in package list to install.
 ## Example
-![](https://i.imgur.com/V6IzWNY.gif)
+![](https://i.imgur.com/Jb4iZ8F.gif)
 
 This will get package into your module automatically.
 

@@ -12,8 +12,8 @@ import (
  * @return (void)
  */
 func ShowHelp() {
-	fmt.Println("Syntax: psearch <package-keyword>")
-	fmt.Println("Example: psearch mongo")
+	fmt.Println("Syntax: gosearch <package-keyword>")
+	fmt.Println("Example: gosearch mongo")
 }
 
 /*
