@@ -7,7 +7,7 @@ go install github.com/kinensake/gosearch@v1.0.0
 ```
 ## Usage
 ```
-psearch <package-keyword>
+gosearch <package-keyword>
 ```
 Then choose package in package list to install.
 ## Example
