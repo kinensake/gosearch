@@ -3,7 +3,7 @@ A Package Searching and Installation tool for Go Projects.
 
 ## Installation
 ```
-go install github.com/kinensake/gosearch@v1.0.1
+go install github.com/kinensake/gosearch@v1.0.2
 ```
 ## Usage
 ```
