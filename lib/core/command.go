@@ -5,11 +5,11 @@ import (
 	"os/exec"
 )
 
-/*
- * Execute "go get -u <package_path>" command
- * @params (package path)
- * @return (void)
- */
+//
+// Execute "go get -u <package_path>" command
+//
+// Parameters:
+//	- packagePath: Package path
 func ExecCommand(packagePath string) {
 	fmt.Println("\nInstalling " + packagePath + "...")
 

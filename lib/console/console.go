@@ -6,21 +6,16 @@ import (
 	"github.com/kinensake/gosearch/lib/core"
 )
 
-/*
- * Show syntax help
- * @params (void)
- * @return (void)
- */
+// Show syntax help.
 func ShowHelp() {
 	fmt.Println("Syntax: gosearch <package-keyword>")
 	fmt.Println("Example: gosearch mongo")
 }
 
-/*
- * Intitialize interactive console display
- * @params (keyword of package)
- * @return (void)
- */
+// Intitialize interactive console display
+//
+// Parameters:
+//	- keyword: package keyword
 func Initialize(keyword string) {
 	paths := core.GetPackagePath(keyword)
 	if len(paths) == 0 {
@@ -34,11 +29,11 @@ func Initialize(keyword string) {
 	core.ExecCommand(paths[c-1])
 }
 
-/*
- * Get package choice from user
- * @params (number of available options)
- * @return (choice number)
- */
+// Get package choice from user
+//
+// Parameters:
+//	- optionLen: number of available options
+// Return: package choice number
 func makeChoice(optionLen int) int {
 	var c int
 	for {
@@ -52,11 +47,10 @@ func makeChoice(optionLen int) int {
 	}
 }
 
-/*
- * Display package choices
- * @params (package path list)
- * @return (void)
- */
+// Display package choices
+//
+// Parameters:
+//	- paths: package paths list
 func showChoices(paths []string) {
 	for i, path := range paths {
 		fmt.Printf("%d. %s\n", i+1, path)

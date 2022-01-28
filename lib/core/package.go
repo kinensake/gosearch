@@ -13,11 +13,11 @@ const (
 	bound   = 5 // max number of packages
 )
 
-/*
- * Crawl search page html with keyword
- * @params (keyword of package)
- * @return (html body)
- */
+// Crawl search page html with keyword
+//
+// Parameters:
+//	- keyword: keyword of package
+// Return: Reader of search page html
 func getSearchPage(keyword string) io.ReadCloser {
 	endpoint := baseURL + url.QueryEscape(keyword)
 	res, err := http.Get(endpoint)
@@ -28,11 +28,11 @@ func getSearchPage(keyword string) io.ReadCloser {
 	return res.Body
 }
 
-/*
- * Get package path list from crawled HTML
- * @params (keyword of package)
- * @return (package path list)
- */
+// Get package path list from crawled HTML
+//
+// Parameters:
+//	- keyword: keyword of package
+// Return: package path list
 func GetPackagePath(keyword string) []string {
 	body := getSearchPage(keyword)
 	defer body.Close()
